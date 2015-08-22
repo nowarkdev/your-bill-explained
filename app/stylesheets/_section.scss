@@ -1,0 +1,19 @@
+.section-header {
+  font-size: 1.25em;
+  margin: 20px 0;
+  padding: 10px 10px 0;
+  border-bottom: 2px solid $grey;
+}
+
+.section-header__title {
+  display: inline-block;
+}
+.section-header__cost {
+  float: right;
+}
+
+.section__subtitle {
+  font-size: 1.125em;
+  padding: 0 10px;
+  border-bottom: 1px solid $grey;
+}

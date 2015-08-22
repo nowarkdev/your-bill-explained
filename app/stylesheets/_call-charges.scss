@@ -1,0 +1,37 @@
+.call-charges {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.call-charges__item {
+  list-style: none;
+  display: flex;
+  &:nth-child(2n+2) {
+    background-color: $light-blue;
+  }
+}
+
+.call-charges__item--header {
+  @extend .call-charges__item;
+}
+
+.call-charge {
+  width: 33%;
+  margin: 5px 10px;
+}
+
+.call-charge__number, .call-charge__duration, .call-charge__cost {
+  @extend .call-charge;
+}
+
+.call-charge__number {
+  text-align: left;
+}
+
+.call-charge__duration {
+  text-align: center;
+}
+
+.call-charge__cost {
+  text-align: right
+}

@@ -1,0 +1,52 @@
+.bill-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.bill-header {
+  border: 1px solid $grey;
+}
+
+.dates {
+  display: flex;
+  text-align: center;
+}
+
+.dates__item {
+  width: 33.3333%;
+  border-top: 1px solid $grey;
+  border-bottom: 1px solid $grey;
+  border-left: 1px solid $grey;
+  padding: 20px 10px;
+  &:first-child {
+    border-left: none;
+  }
+}
+
+.statement__date {
+  font-size: 1.25em;
+}
+
+.statement__title {
+  font-size: 2em;
+  text-align: center;
+}
+
+.statement__subtitle {
+  font-size: 1.5em;
+  padding-left: 10px;
+}
+
+.total-amount {
+  font-size: 1.5em;
+  margin: 20px 0;
+  padding: 10px 10px 0;
+}
+
+.total-amount__title {
+  display: inline-block;
+}
+.total-amount__cost {
+  float: right;
+}
