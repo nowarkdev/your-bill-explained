@@ -31,4 +31,16 @@ describe('Section', function() {
 
     expect(contents[0].getDOMNode().firstChild.firstChild.textContent).toEqual('Content');
   });
+
+  it('should toggle the state closed property after clicking on the header', () => {
+    var section = TestUtils.renderIntoDocument(<Section data={data}><div>Content</div></Section>);
+    let headers = TestUtils.scryRenderedDOMComponentsWithClass(section, 'section-header');
+    expect(headers.length).toEqual(1);
+
+    TestUtils.Simulate.click(headers[0].getDOMNode());
+    expect(section.state.closed).toBe(false);
+
+    TestUtils.Simulate.click(headers[0].getDOMNode());
+    expect(section.state.closed).toBe(true);
+  });
 });

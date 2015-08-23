@@ -9,7 +9,7 @@ class CallCharges extends React.Component {
         <ul className="call-charges">
           <li className="call-charges__item--header">
             <div className="call-charge__number">Called number</div>
-            <div className="call-charge__duration">Call duration (hh:mm:ss)</div>
+            <div className="call-charge__duration">Length</div>
             <div className="call-charge__cost">Call cost</div>
           </li>
           {

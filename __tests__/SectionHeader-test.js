@@ -29,5 +29,21 @@ describe('SectionHeader', function() {
 
     expect(title[0].getDOMNode().textContent).toEqual('Section title');
     expect(cost[0].getDOMNode().textContent).toEqual('£120.00');
-  })
+  });
+
+  it('should execute function pass as onHeaderClick prop', () => {
+    let result = 0;
+    let clickHandler = function () {
+      result += 10;
+    };
+
+    let sectionHeader = TestUtils.renderIntoDocument(<SectionHeader data={data} onHeaderClick={clickHandler}/>);
+
+    let headers = TestUtils.scryRenderedDOMComponentsWithClass(sectionHeader, 'section-header');
+    expect(headers.length).toEqual(1);
+
+    TestUtils.Simulate.click(headers[0].getDOMNode());
+
+    expect(result).toEqual(10);
+  });
 });

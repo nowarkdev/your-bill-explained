@@ -1,8 +1,11 @@
+
 .packages {
-  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+  @include breakpoint ($mobile-landscape) {
+    display: flex;
+  }
 }
 
 .package {
@@ -10,9 +13,14 @@
   text-align: center;
   background: $blue;
   color: $background-color;
-  margin: 10px;
+  margin: 10px auto;
   padding: 10px;
-  width: 33.3%;
+  width: 200px;
+
+  @include breakpoint ($mobile-landscape) {
+    width: 33.3%;
+    margin: 10px;
+  }
 }
 
 .package--tv, .package--broadband, .package--talk {

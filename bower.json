@@ -1,0 +1,21 @@
+{
+  "name": "your-bill-explained",
+  "main": "index.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/frikille/your-bill-explained",
+  "authors": [
+    "Peter Balazs <peter.balazs@flowy.co.uk>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "breakpoint-sass": "~2.5.0"
+  }
+}

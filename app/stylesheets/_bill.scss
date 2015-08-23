@@ -11,6 +11,10 @@
 .dates {
   display: flex;
   text-align: center;
+  font-size: .8em;
+  @include breakpoint ($mobile-landscape) {
+    font-size: 1em;
+  }
 }
 
 .dates__item {

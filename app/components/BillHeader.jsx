@@ -17,7 +17,7 @@ class BillHeader extends React.Component {
             <div className="statement__date">{toDDMM(this.props.data.period.from)} - {toDDMM(this.props.data.period.to)}</div>
           </div>
           <div className="dates__item">
-            <div>Payment due</div>
+            <div>Due by</div>
             <div className="statement__date">{toUKDate(this.props.data.due)}</div>
           </div>
         </div>

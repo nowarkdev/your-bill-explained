@@ -5,8 +5,49 @@
   border-bottom: 2px solid $grey;
 }
 
+.statement__section .section-header {
+  cursor: pointer;
+  padding-left: 0;
+}
+.section-header__icon {
+  background-image: url('/assets/chevron-down.svg');
+  background-repeat: no-repeat;
+  display: inline-block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  background-position: 50%;
+  margin-right: 10px;
+
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -o-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+
+  -webkit-transform-origin: 15px 15px;
+  -moz-transform-origin: 15px 15px;
+  -o-transform-origin: 15px 15px;
+  -ms-transform-origin: 15px 15px;
+  transform-origin: 15px 15px;
+
+  -webkit-transition: transform .25s ease-out;
+  -moz-transition: transform .25s ease-out;
+  -o-transition: transform .25s ease-out;
+  transition: transform .25s ease-out;
+}
+
+.statement__section--closed .section-header__icon {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
 .section-header__title {
   display: inline-block;
+  float: left;
 }
 .section-header__cost {
   float: right;
@@ -16,4 +57,17 @@
   font-size: 1.125em;
   padding: 0 10px;
   border-bottom: 1px solid $grey;
+}
+
+.section__content {
+  max-height: 1000px;
+  overflow: hidden;
+  -webkit-transition: max-height .5s ease-out;
+  -moz-transition: max-height .5s ease-out;
+  -o-transition: max-height .5s ease-out;
+  transition: max-height .5s ease-out;
+}
+
+.section__content--closed {
+  max-height: 0;
 }

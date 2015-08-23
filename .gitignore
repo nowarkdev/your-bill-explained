@@ -1,3 +1,5 @@
 node_modules
 logs
-public
+public/javascript
+public/stylesheet
+bower_components
