@@ -44,6 +44,7 @@
   },
   "scripts": {
     "start": "NODE_ENV=development supervisor --harmony -i node_modules,public -e js,jsx,json bootstrap.js",
+    "start-prod": "node bootstrap.js",
     "dist": "gulp dist",
     "build": "gulp watch",
     "style": "gulp css",
