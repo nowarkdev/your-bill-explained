@@ -1,11 +1,9 @@
 .call-charges {
   margin: 0;
   padding: 0;
-  list-style: none;
+  width: 100%;
 }
 .call-charges__item {
-  list-style: none;
-  display: flex;
   &:nth-child(2n+2) {
     background-color: $light-blue;
   }
@@ -16,7 +14,6 @@
 }
 
 .call-charge {
-  width: 33%;
   margin: 5px 10px;
 }
 

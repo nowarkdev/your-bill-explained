@@ -1,11 +1,10 @@
 .store-list {
-  list-style: none;
+  width: 100%;
   margin: 5px 0 20px;
   padding: 0;
 }
 
 .store-list__item {
-  display: flex;
   padding: 5px 10px;
   &:nth-child(2n+1) {
     background-color: $light-blue;
@@ -19,5 +18,4 @@
 .store-item__cost {
   width: 50%;
   text-align: right;
-  align-self: flex-end;
 }

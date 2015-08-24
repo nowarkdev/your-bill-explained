@@ -34,7 +34,7 @@ describe('CallCharges', function() {
     let callChargeCost = TestUtils.scryRenderedDOMComponentsWithClass(callCharge, 'call-charge__cost');
 
     expect(list.length).toEqual(1);
-    expect(list[0].getDOMNode().childNodes.length).toEqual(5);
+    expect(list[0].getDOMNode().lastChild.childNodes.length).toEqual(4);
 
     expect(callChargeNumber.length).toEqual(5);
     expect(callChargeDuration.length).toEqual(5);

@@ -7,31 +7,31 @@ class SkyStore extends React.Component {
     return (
       <Section data={{title: 'Sky Store', total: this.props.data.total}}>
         <div className="section__subtitle">Rentals</div>
-        <ul className="store-list">
+        <table className="store-list">
           {
             this.props.data.rentals.map(movie => {
               return (
-                <li className="store-list__item">
-                  <div className="store-item__title">{movie.title}</div>
-                  <div className="store-item__cost">{toPounds(movie.cost)}</div>
-                </li>
+                <tr className="store-list__item">
+                  <td className="store-item__title">{movie.title}</td>
+                  <td className="store-item__cost">{toPounds(movie.cost)}</td>
+                </tr>
               );
             })
           }
-        </ul>
+        </table>
         <div className="section__subtitle">Buy and keep</div>
-        <ul className="store-list">
+        <table className="store-list">
           {
             this.props.data.buyAndKeep.map(movie => {
               return (
-                <li className="store-list__item">
-                  <div className="store-item__title">{movie.title}</div>
-                  <div className="store-item__cost">{toPounds(movie.cost)}</div>
-                </li>
+                <tr className="store-list__item">
+                  <td className="store-item__title">{movie.title}</td>
+                  <td className="store-item__cost">{toPounds(movie.cost)}</td>
+                </tr>
               );
             })
           }
-        </ul>
+        </table>
       </Section>
     );
   }
