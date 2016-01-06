@@ -7,6 +7,6 @@ app.use(express.static('public'));
 
 app.use(router);
 
-let server = app.listen((process.env.PORT || 2222), () => {
+let server = app.listen((process.env.PORT || 2223), () => {
   logger.verbose("Express server listening at " + JSON.stringify(server.address()));
 });
