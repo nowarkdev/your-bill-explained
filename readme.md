@@ -22,7 +22,7 @@
 
   3. Starting the application
 
-    The default port is 2222, but it can be set in PORT env
+    The default port is 2223, but it can be set in PORT env
     ```
     npm run start-prod
     ```
